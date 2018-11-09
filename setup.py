@@ -358,7 +358,7 @@ def run_setup(ext_modules, run_make):
 
                 # Makes tests faster
                 # Fails to build on PyPy on Windows.
-                'psutil ; platform_python_implementation == "CPython" or sys_platform != "win32"',
+                'psutil',
                 # examples, called from tests, use this
                 'requests',
 
